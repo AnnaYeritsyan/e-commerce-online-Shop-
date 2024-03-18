@@ -1,0 +1,23 @@
+body{
+  background-color:  #0090AA;
+}
+.header-nav{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+#demo-simple-select-label{
+  color: black;
+}
+#movie-customized-option-demo-label{
+  color:black
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.mt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

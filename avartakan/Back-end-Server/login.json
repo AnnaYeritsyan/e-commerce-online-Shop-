@@ -1,0 +1,27 @@
+[
+    {
+        "products": [
+            {
+                "id": "1",
+                "imageUrl": "https://th.bing.com/th/id/R.faa4236f01c9458c27af1fef1214199f?rik=4JuGpABWsGdAFQ&riu=http%3a%2f%2fwww.zastavki.com%2fpictures%2foriginals%2f2014%2fBrands____Beautiful_watches_065807_.jpg&ehk=akqyWvVViw5kVAohEcgshnRrzrNO5bufH6aFjEy6m1Y%3d&risl=&pid=ImgRaw&r=0",
+                "name": "Brand Watches",
+                "price": "50$",
+                "description": "TREND-DESIGN BRANDED OVAL SILVER DIAL QUARTZ WATCH"
+            }, {
+                "id": "2",
+                "imageUrl": "https://m.media-amazon.com/images/I/71p2mUe8KJS._AC_UY1000_.jpg",
+                "name": "Brand Watches",
+                "price": "100$",
+                "description": "armenian watches"
+            }
+        ]
+    },
+    {
+        "users": [
+            {
+               
+            }
+        ]
+    }
+
+]
