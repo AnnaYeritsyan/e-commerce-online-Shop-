@@ -28,7 +28,6 @@ export const userSlice = createSlice({
             state.user = null;
         },
         sliceprofile: (state, action) => {
-            // state.users = action.payload;
             return {
             ...state,
            users : state.users.concat(action.payload)
@@ -55,9 +54,7 @@ export const userSlice = createSlice({
             }
         }
         }
-       
-     
-    // }
+  
 })
 
 export const { sliceprofile } = userSlice.actions;

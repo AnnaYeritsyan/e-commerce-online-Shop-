@@ -1,7 +1,6 @@
 import { Box, Button, Rating, TextField, } from '@mui/material';
 import { ChangeEvent, useState, KeyboardEvent, SyntheticEvent } from 'react';
 import { Link, useNavigate } from "react-router-dom";
-// import {MovieDTO} from "../../../store/users/users.slice";
 import { v4 } from 'uuid';
 import { ProductItemType } from '../../../types/types';
 import { useAppDispatch } from '../../../store';
@@ -20,10 +19,6 @@ const VisuallyHiddenInput = styled('input')({
     whiteSpace: 'nowrap',
     width: 1,
 });
-// import moment from 'moment'
-// import {usersActions} from "../../../store/users/config";
-// import {useAppDispatch} from "../../../store";
-
 const Admin = () => {
     const [newProduct, setNewProduct] = useState<ProductItemType>(
         {
@@ -55,7 +50,7 @@ const Admin = () => {
 
 
     const handleSaveProduct = () => {
-        console.log(newProduct)
+        // console.log(newProduct)
         const formData = new FormData();
         formData.append("image", image.raw);
         dispatch(usersActions.addNewProduct(newProduct))

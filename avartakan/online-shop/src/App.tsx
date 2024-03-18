@@ -1,7 +1,5 @@
-import { Route, Routes, Navigate, Router, BrowserRouter } from 'react-router-dom';
+import { Route, Routes, Navigate, BrowserRouter } from 'react-router-dom';
 import Layout from './Components/Layout';
-
-
 import './App.css';
 import HomePage from './Components/Pages/home';
 import Products from './Components/Pages/Products/Products';
@@ -17,7 +15,6 @@ import Profile from './Components/Pages/Profile/Profile';
 function App() {
   const [cart, setCart] = useState<string[]>([]);
   const [order, setOrder] = useState<string[]>([])
-  const [filtered, setFiltered] = useState<string[]>([])
 
   const addToCart = (product:any) => {
       setCart([...cart, product]);
@@ -25,33 +22,15 @@ function App() {
   const addToOrder = (product:any)=>{
     setOrder([...order, product]);
   }
-  // const removeFromCart = (productIndex:number)=>{
-  //   const updatedCart = [...cart]
-  //   console.log(updatedCart)
-  //   console.log(productIndex)
-  //   updatedCart.map((e:any)=>(
-  //     console.log(e === productIndex)
-    
-  //     )
-       
-  //   )
-  //    updatedCart.splice(productIndex,1)
-  //   setCart(updatedCart)
-  // }
-  const removeFromCart = (productId:any) => {
-    console.log(productId)
-    
+
+  const removeFromCart = (productId:any) => {  
     const updatedCart = cart.filter((item: any) => item.id != productId.id     );
     setCart(updatedCart);
-    console.log(updatedCart)
+    // console.log(updatedCart)
 };
 
-
   let getuserName =localStorage.getItem("token");
-  console.log(getuserName)
-
- 
-
+  
   return (
     <BrowserRouter>
     <Routes>

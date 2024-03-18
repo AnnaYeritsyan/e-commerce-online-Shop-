@@ -4,9 +4,7 @@ import { ProductItemType } from "../../types/types";
 
 export const registerApi = async (userData: any) => {
     console.log(userData)
-    // const data = await response.json();
-    // Store token or session identifier in local storage
- 
+
     try {
         const response = await fetch('http://localhost:3004/signup', {
             method: 'POST',

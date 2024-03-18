@@ -26,15 +26,7 @@ const Header = () => {
           orders
         </Link>
 
-        {/* {isAuthenticated && (
-          
-        )}
-        {!isAuthenticated && (
-        
-        )} */}
-
         <Link to='/profile'>
-          {/* <PersonOutlineOutlinedIcon /> */}
           profile
         </Link>
 

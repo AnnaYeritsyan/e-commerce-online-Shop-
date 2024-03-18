@@ -7,9 +7,9 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
 const Orders = (order: any) => {
-    console.log(order.order.length)
-    const isdelivered: any = order.order
-    console.log(isdelivered === true)
+    // console.log(order.order.length)
+    // const isdelivered: any = order.order
+    // console.log(isdelivered === true)
     return (
         <div >
             orders

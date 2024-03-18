@@ -24,16 +24,6 @@ const Products: React.FC<ProductsProps> = ({ addToCart}) => {
 
     }, [dispatch])
 
-
-    const handleEnter = (e: React.KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter') {
-
-            console.log(selectedCategory)
-
-
-        }
-
-    }
     useEffect(() => {
         if (selectedCategory) {
             const filtered = products.filter((product: any) => product.id === selectedCategory.id);
@@ -77,7 +67,7 @@ const Products: React.FC<ProductsProps> = ({ addToCart}) => {
                         disableCloseOnSelect
                         renderInput={(params) => (
                             <TextField {...params} label="Choose a filter product" variant="standard"
-                                onKeyDown={handleEnter} />
+                              />
                         )}
                     />
                     <Box sx={{ width: '220px' }} >

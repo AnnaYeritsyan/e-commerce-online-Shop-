@@ -7,7 +7,6 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import {useNavigate} from 'react-router-dom';
 import { ProductItemProps, ProductItemType as ProductItemType} from '../../../../types/types'
-import ProductsDetail from '../ProductsDetail/ProductsDetail';
 
 
 const ProductItem: React.FC<ProductItemProps> = ({ item, addToCart}) => {
@@ -16,12 +15,12 @@ const ProductItem: React.FC<ProductItemProps> = ({ item, addToCart}) => {
   
     const handleClick = () => {
       navigate(`/products/${ref.current.id}`);  
-      console.log(ref)
+    //   console.log(ref)
       
     }
     const productBuy = () => {
         addToCart(item)
-        console.log(item)
+        // console.log(item)
     }
 
     return (
