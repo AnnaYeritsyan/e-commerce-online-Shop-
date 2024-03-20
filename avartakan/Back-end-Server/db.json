@@ -1,1 +1,37 @@
-{"users":[{"id":1710708520544,"username":"Anka","password":"1234"},{"id":1710710059174,"password":"testtest","email":"test@gmail.com"}],"products":[{"id":"1","imageUrl":"https://th.bing.com/th/id/R.faa4236f01c9458c27af1fef1214199f?rik=4JuGpABWsGdAFQ&riu=http%3a%2f%2fwww.zastavki.com%2fpictures%2foriginals%2f2014%2fBrands____Beautiful_watches_065807_.jpg&ehk=akqyWvVViw5kVAohEcgshnRrzrNO5bufH6aFjEy6m1Y%3d&risl=&pid=ImgRaw&r=0","name":"Brand Watches","price":"50$","description":"TREND-DESIGN BRANDED OVAL SILVER DIAL QUARTZ WATCH"},{"id":"2","imageUrl":"https://m.media-amazon.com/images/I/71p2mUe8KJS._AC_UY1000_.jpg","name":"Brand Watches","price":"100$","description":"armenian watches"},{"id":"edd71c98-d461-4d0f-884c-341fd0936624","imageUrl":"C:\\fakepath\\levon.jpg","name":"new","price":"12$","description":"new"},{"id":"fdc7d3a0-0f30-40a0-9a68-cd4c090e6654","imageUrl":"C:\\fakepath\\levon.jpg","name":"","price":"","description":""},{"id":"d06ba213-c081-4d4a-811b-69efceb08190","imageUrl":"C:\\fakepath\\OIP.jpg","name":"ՆԱՍԼՅԱՆ ԱՆԻ ԱՐՄԵՆԻ","price":"3500$","description":"kino"},{"id":"0451e36e-588c-4f2a-972f-b3933f38fad8","imageUrl":"C:\\fakepath\\my.jpg","name":"ՆԱՍԼՅԱՆ ԱՆԻ ԱՐՄԵՆԻ","price":"3500","description":"aaa"},{"id":"40be621e-32b0-44e0-bc9c-5a9db9882432","imageUrl":"C:\\fakepath\\levon.jpg","name":"ՆԱՍԼՅԱՆ ԱՆԻ ԱՐՄԵՆԻ","price":"3500","description":"kino"}]}
+{
+    "users": [
+        {
+            "id": 1710708520544,
+            "username": "Anka",
+            "password": "1234"
+        },
+        {
+            "id": 1710710059174,
+            "password": "testtest",
+            "email": "test@gmail.com"
+        }
+    ],
+    "products": [
+        {
+            "id": "1",
+            "imageUrl": "https://th.bing.com/th/id/R.faa4236f01c9458c27af1fef1214199f?rik=4JuGpABWsGdAFQ&riu=http%3a%2f%2fwww.zastavki.com%2fpictures%2foriginals%2f2014%2fBrands____Beautiful_watches_065807_.jpg&ehk=akqyWvVViw5kVAohEcgshnRrzrNO5bufH6aFjEy6m1Y%3d&risl=&pid=ImgRaw&r=0",
+            "name": "Brand Watches",
+            "price": "50$",
+            "description": "TREND-DESIGN BRANDED OVAL SILVER DIAL QUARTZ WATCH"
+        },
+        {
+            "id": "2",
+            "imageUrl": "https://m.media-amazon.com/images/I/71p2mUe8KJS._AC_UY1000_.jpg",
+            "name": "Brand Watches",
+            "price": "100$",
+            "description": "armenian watches"
+        },
+        {
+            "id": "edd71c98-d461-4d0f-884c-341fd0936624",
+            "imageUrl": "C:\\fakepath\\levon.jpg",
+            "name": "new",
+            "price": "12$",
+            "description": "new"
+        }
+    ]
+}

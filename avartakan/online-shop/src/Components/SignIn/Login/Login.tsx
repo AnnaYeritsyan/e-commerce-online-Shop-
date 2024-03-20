@@ -38,8 +38,12 @@ let loc = localStorage.setItem('token', creds.username);
     }
     return (
         <Box className='reg-login-page'>
-            <Typography component={'h2'} variant='h2'>Login</Typography>
-            <form onSubmit={formSubmitHandler}>
+            <Box>
+
+         
+             <Typography component={'h2'} variant='h2'>Login</Typography>
+            <form onSubmit={formSubmitHandler} style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+               
                 <Box className={inputError.length ? 'form-item error-item' : 'form-item'}>
                     <Box className='form-field with-icon'>
                         <input
@@ -55,6 +59,7 @@ let loc = localStorage.setItem('token', creds.username);
                 <Box className={inputError.length ? 'form-item error-item' : 'form-item'}>
                     <Box className='form-field with-icon'>
                         <input value={creds.password} type='password' name='password' placeholder='Password:' onChange={handleChange}/>
+                        <PersonIcon/>
                     </Box>
                     <p className='api-sign-example'>api example: 0lelplR</p>
                     <Box className='form-error'>{inputError}</Box>
@@ -67,6 +72,7 @@ let loc = localStorage.setItem('token', creds.username);
 
                 </Box>
             </form>
+            </Box>
             <Box className='change-sign-form'>
                 <Typography component={'p'}>
                     If you haven&apos;t an account? <Link to='/register'>Sign Up here</Link>
