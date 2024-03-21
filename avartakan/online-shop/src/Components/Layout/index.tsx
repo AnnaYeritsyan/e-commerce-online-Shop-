@@ -4,10 +4,11 @@ import Header from './header';
 import Footer from './footer';
 
 
-const Layout = () => {
+const Layout = (orderCaunt:any) => {
+  console.log(orderCaunt)
   return (
     <div className='wrapper'>
-      <Header />
+      <Header orderCaunt={orderCaunt}/>
       <main>
         <Outlet />
       </main>

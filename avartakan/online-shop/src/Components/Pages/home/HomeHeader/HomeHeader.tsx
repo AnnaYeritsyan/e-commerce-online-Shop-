@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom';
+
 import skateText from '../../../accets/Img/textSkeyt.png'
 import skayte from '../../../accets/Img/skeyt.png'
-import { Box } from '@mui/material';
-const HomePage = () => {
+import { Box } from '@mui/material';  
 
-  return (
-    <Box>
-      <Box sx={{
+const HomeHeader = () => {
+    return (
+
+ <Box sx={{
         backgroundImage: `url(${skateText})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: 'contain',
@@ -35,8 +35,6 @@ const HomePage = () => {
         </Box>
       </Box>
 
-    </Box>
-  );
+    );
 };
-
-export default HomePage;
+export default HomeHeader;

@@ -15,9 +15,11 @@ import Profile from './Components/Pages/Profile/Profile';
 function App() {
   const [cart, setCart] = useState<string[]>([]);
   const [order, setOrder] = useState<string[]>([])
+  const [orderCaunt, setOrderCaunt]= useState(0)
 
   const addToCart = (product:any) => {
       setCart([...cart, product]);
+
   };
   const addToOrder = (product:any)=>{
     setOrder([...order, product]);
@@ -29,12 +31,17 @@ function App() {
     // console.log(updatedCart)
 };
 
-  let getuserName =localStorage.getItem("token");
+useEffect(()=>{
+  // console.log(cart)
+  setOrderCaunt(cart.length)
+},[cart])
+
+  let getuserName = localStorage.getItem("token");
   
   return (
     <BrowserRouter>
     <Routes>
-    <Route element={<Layout />}>
+    <Route element={<Layout orderCaunt={orderCaunt}/>}>
       <Route path='/' element={<HomePage />} />
       <Route path='products'>
         <Route index element={<Products addToCart={addToCart} />} />
